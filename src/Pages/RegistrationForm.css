@@ -1,0 +1,117 @@
+.signup-background {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(242, 242, 242, 0.1);
+  /* Light gray with 80% opacity */
+  border: 1px solid rgba(204, 204, 204, 0.4);
+  /* Light gray border with 80% opacity */
+  border-radius: 10px;
+  text-align: center;
+}
+
+.buttons_h2_sonainer {
+  padding: 0 0 20px 0;
+  border-radius: 10px 10px 0 0 ;
+  position: relative;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 0 20px;
+
+}
+
+.buttons-container button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+
+
+.registration-form hr {
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form input {
+  padding: 10px;
+  margin: 10px 20px;
+  background-color: rgba(242, 242, 242, 0.1);
+  /* Light gray with 80% opacity */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registration-form input:focus {
+  outline: none;
+  /* Remove default focus outline */
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.registration-form button {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #017BA0;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.registration-form button:hover {
+  background: rgba(2, 126, 251, 1);
+
+}
+
+.login-form input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.heading-container {
+  text-align: center; 
+  margin-bottom: 20px; 
+  position: relative;
+}
+
+.heading-container h2 {
+  display: inline-block; 
+  
+  margin-bottom: 0px;
+  padding: 10px 10px 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  
+}
+
+.heading-container hr {
+  border: none; /* Remove default border style */
+  height: 5px; /* Thickness of the line */
+  background-color: #0100ff;
+  width: 20%; 
+  margin:  0px auto; 
+}

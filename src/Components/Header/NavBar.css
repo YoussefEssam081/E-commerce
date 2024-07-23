@@ -1,0 +1,47 @@
+.nav-link
+{
+  margin: 7px;
+}
+.underline_Home
+{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: rgb(36, 75, 53);
+    margin: 5px; 
+   
+}
+
+.tryndaStore_logo 
+{
+    max-width: 30px;
+    margin-right: 10px;
+
+}
+.trolley_logo
+{
+    max-width: 50px;
+}
+.nav_cart_count
+{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -45px;
+    margin-left: -15px;
+    border-radius: 11px;
+    font-size: 14px;
+    background-color: seagreen;
+    color: white;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+
+.offers
+{
+    display: flex;
+    align-items: center;
+  justify-content: space-between;   
+  background-color: #f9f9f9;
+    padding: 20px ;
+    margin-top: 80px;
+}
+
+
+.offer_left, .offer_right {
+    flex: 1;
+    text-align: center;
+  }
+.offer_right h1 
+{
+    font-size: 4rem;
+    font-weight:600 ;
+    font-family:  sans-serif;
+}
+
+.offer_img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  

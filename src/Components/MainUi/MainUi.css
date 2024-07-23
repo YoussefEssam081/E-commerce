@@ -1,0 +1,71 @@
+.mainview {
+    position: relative;
+    width: 92%;
+    height: 110vh;
+    margin-left: 60px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  
+  .mainview_right {
+    color: white;
+    max-width: 600px;
+    margin-left: 50px;
+    font-family: 'Anton SC', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .mainview_right p {
+    color: #2b2a2a;
+  }
+  
+  .mainview_Hello_icon {
+    width: 100px;
+    margin-bottom: 450px;
+    margin-left: -80px;
+  }
+  
+  .mainview_right .mainview_right_lets {
+    font-size: 4rem;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 15px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: rotate(25deg); /* Slight rotation */
+  
+  }
+  
+  .mainview_right .mainview_right_unique {
+    font-size: 3.5rem;
+    padding: 10px 60px 5px 15px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+    background-color: rgba(22, 70, 3, 0.747);
+    clip-path: polygon(0 10%, 100% 0, 100% 88%, 0% 100%, 0% 70%); /* Wave-shaped background */
+  }
+  
+  .mainview_right p {
+    font-size: 4rem;
+    padding: 10px 20px;
+  }
+  
+  .mainview_icon img {
+    width: 100px;
+  }
+
+  
+
+
