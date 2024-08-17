@@ -1,60 +1,156 @@
 .newsletter {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 50px 0px;
-  }
-  
-  .newsletter-heading {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  .newsletter-text {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  
-  .newsletter-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .newsletter-input {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 400px;
-    margin-bottom: 20px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px 0;
+}
+
+.newsletter-heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.newsletter-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
 
 .newsletter-input:focus {
-    border-color: #76aef1;
-    box-shadow: 0 0 10px rgba(118, 174, 241, 0.5);
-    outline: none;
-  }
-  
-  .newsletter-input::placeholder {
-    color: #aaa;
-    transition: color 0.3s ease;
-  }
-  
-  .newsletter-input:focus::placeholder {
-    color: #76aef1;
-  }
-  
+  border-color: #76aef1;
+  box-shadow: 0 0 10px rgba(118, 174, 241, 0.5);
+  outline: none;
+}
 
-  
+.newsletter-input::placeholder {
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.newsletter-input:focus::placeholder {
+  color: #76aef1;
+}
+
+.newsletter-message {
+  margin-top: 20px;
+  color: green;
+  font-size: 1rem;
+}
+
+/* Extra Small Devices (Phones in Portrait Mode) */
+@media (max-width: 576px) {
+  .newsletter {
+    padding: 30px 10px;
+    margin: 30px 0;
+  }
+
+  .newsletter-heading {
+    font-size: 1.5rem;
+  }
+
+  .newsletter-text {
+    font-size: 0.875rem;
+  }
+
+  .newsletter-input {
+    font-size: 0.875rem;
+    width: 90%;
+  }
+
   .newsletter-message {
-    margin-top: 20px;
-    color: green;
+    font-size: 0.875rem;
+  }
+}
+
+/* Small Devices (Phones in Landscape Mode) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .newsletter {
+    padding: 40px 15px;
+    margin: 40px 0;
+  }
+
+  .newsletter-heading {
+    font-size: 1.75rem;
+  }
+
+  .newsletter-text {
+    font-size: 0.9rem;
+  }
+
+  .newsletter-input {
+    font-size: 0.9rem;
+    width: 85%;
+  }
+
+  .newsletter-message {
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 769px) and (max-width: 991px) {
+  .newsletter {
+    padding: 45px 20px;
+    margin: 45px 0;
+  }
+
+  .newsletter-heading {
+    font-size: 1.9rem;
+  }
+
+  .newsletter-text {
+    font-size: 0.95rem;
+  }
+
+  .newsletter-input {
+    font-size: 0.95rem;
+    width: 80%;
+  }
+
+  .newsletter-message {
+    font-size: 0.95rem;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) {
+  .newsletter {
+    padding: 50px 20px;
+    margin: 50px 0;
+  }
+
+  .newsletter-heading {
+    font-size: 2rem;
+  }
+
+  .newsletter-text {
     font-size: 1rem;
   }
-  
+
+  .newsletter-input {
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .newsletter-message {
+    font-size: 1rem;
+  }
+}

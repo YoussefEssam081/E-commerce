@@ -15,15 +15,15 @@ export const TopSelling = () => {
         <h1 className='custom-title'>Top Selling Products</h1>
         <p className='custom-paragraph mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis delectus architecto error nesciunt.</p>
       </div>
-      <Row>
+      <Row  >
         {topSellingProducts.map((product, index) => (
           <Col key={index} md={3} className="mb-4">
-            <div className="image-container">
-              <Link to="/product"><Image src={product.image} className="custom-image" /></Link>
+            <div className="image-container ">
+              <Link to="/product"><Image src={product.image} className=" custom-image" /></Link>
             </div>
             <h2 className="custom-product-title">{product.title}</h2>
             <Image className='productS_star_icon' src="../Images/star.png"/>
-            <span>{product.rating}</span>
+            <span className="custom-product-span">{product.rating}</span>
           </Col>
         ))}
       </Row>

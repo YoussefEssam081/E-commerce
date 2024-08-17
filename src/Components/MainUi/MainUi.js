@@ -21,21 +21,21 @@ export default function MainUi() {
           <p className='nav-link'>EXPLORE</p>
           <h2 className='mainview_right_unique main_quote'>UNIQUE</h2>
           <p className='nav-link'>PRODUCTS. </p>
-          
-         
+
+
           <button class="custom-btn btn-12"><span>Click!</span><span>SHOP NOW</span></button>
         </div>
-        
-         
+
+
         <img className='mainview_Hello_icon' src='/Images/wave.png' alt='' />
 
 
       </div>
 
       <TopSelling />
-      <Offer/>
+      <Offer />
       <Newsletter />
-      <Footer/>
+      <Footer />
     </>
   );
 }

@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchApi } from '../../Store/Slices/Products_Slice'; // Adjust the import path
+import { fetchApi } from '../../Store/Slices/Products_Slice'; 
 
 export default function NavBar() {
   const cart = useSelector((state) => state.cart);
@@ -23,9 +23,9 @@ export default function NavBar() {
   const categories = [...new Set(products.map(product => product.category))];
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary ">
+    <Navbar expand="md" className="bg-body-tertiary ">
       <Container fluid>
-        <Link to="/" > <img className='tryndaStore_logo' src='/Images/letter-o.png' alt=''/>  </Link> 
+        <Link to="/" > <img className='tryndaStore_logo' src='/Images/letter-o.png' alt='' />  </Link>
         <Link className='navbar-brand ' to="/">Obito Store</Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -62,9 +62,13 @@ export default function NavBar() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Link to="/login"> <Button variant="outline-success">Login</Button>  </Link> 
-          <Link to="/cart"> <img className='trolley_logo' src='/Images/trolley-cart.png ' alt=''/> </Link>
-          <div className='nav_cart_count'>{cart.length}</div>
+          <div className='nav-log-cart'>
+            <Link to="/login"> <Button variant="outline-success">Login</Button>  </Link>
+            <div className='nav-cart-cartcount'>
+              <Link to="/cart"> <img className='trolley_logo' src='/Images/trolley-cart.png ' alt='' /> </Link>
+              <div className='nav_cart_count'>{cart.length}</div>
+            </div>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

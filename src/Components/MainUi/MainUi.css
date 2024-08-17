@@ -1,71 +1,158 @@
 .mainview {
-    position: relative;
-    width: 92%;
-    height: 110vh;
-    margin-left: 60px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
+  position: relative;
+  max-width: 92%;
+  height: auto;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.mainview_right {
+  color: white;
+  max-width: 600px;
+  margin-left: 50px;
+  font-family: 'Anton SC', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.mainview_right p {
+  color: #2b2a2a;
+}
+
+.mainview_Hello_icon {
+  width: 100px;
+  margin-bottom: 450px;
+  margin-left: -80px;
+}
+
+.mainview_right .mainview_right_lets {
+  font-size: 4rem;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 15px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: rotate(25deg);
+  /* Slight rotation */
+
+}
+
+.mainview_right .mainview_right_unique {
+  font-size: 3.5rem;
+  padding: 10px 60px 5px 15px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  overflow: hidden;
+  background-color: rgba(22, 70, 3, 0.747);
+  clip-path: polygon(0 10%, 100% 0, 100% 88%, 0% 100%, 0% 70%);
+  /* Wave-shaped background */
+}
+
+.mainview_right p {
+  font-size: 4rem;
+  padding: 10px 20px;
+}
+
+.mainview_icon img {
+  width: 100px;
+}
+
+
+
+/* Extra Small Devices (Phones in Portrait Mode) */
+@media (max-width: 576px) {
+  .mainview {
+    width: 100%;
+     margin: 0 auto;
+    padding: 10px;
+   
   }
-  
-  .mainview_right {
-    color: white;
-    max-width: 600px;
-    margin-left: 50px;
-    font-family: 'Anton SC', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+ 
+  .mainview_right .mainview_right_lets,
+  .mainview_right .mainview_right_unique,
   .mainview_right p {
-    color: #2b2a2a;
+    font-size: 2.5rem; 
   }
-  
+
+  .mainview_Hello_icon {
+    width: 80px;
+    margin-bottom: 300px;
+    margin-left: -50px;
+  }
+  .custom-btn {
+    display: block; /* Ensure the button is a block element for centering */
+    margin: 20px auto; /* Center the button horizontally */
+  }
+}
+
+
+
+/* Small Devices (Phones in Landscape Mode) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .mainview {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+ 
+  }
+  .mainview_right .mainview_right_lets,
+  .mainview_right .mainview_right_unique,
+  .mainview_right p {
+    font-size: 3rem; /* Slightly larger font size for landscape phones */
+  }
+
+  .mainview_Hello_icon {
+    width: 90px;
+    margin-bottom: 350px;
+    margin-left: -60px;
+  }
+  .custom-btn {
+    display: block; 
+    margin: 20px auto; 
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+  .mainview_right .mainview_right_lets,
+  .mainview_right .mainview_right_unique,
+  .mainview_right p {
+    font-size: 3.5rem; /* Medium font size for tablets */
+  }
+
+  .mainview_Hello_icon {
+    width: 100px;
+    margin-bottom: 400px;
+    margin-left: -70px;
+  }
+
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 993px) {
+
+  .mainview_right .mainview_right_lets,
+  .mainview_right .mainview_right_unique,
+  .mainview_right p {
+    font-size: 4rem; /* Keep the original font size for larger desktops */
+  }
+
   .mainview_Hello_icon {
     width: 100px;
     margin-bottom: 450px;
     margin-left: -80px;
   }
-  
-  .mainview_right .mainview_right_lets {
-    font-size: 4rem;
-    padding: 10px 20px;
-    margin: 10px 0;
-    border-radius: 15px;
-    position: relative;
-    display: inline-block;
-    z-index: 1;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.6);
-    transform: rotate(25deg); /* Slight rotation */
-  
-  }
-  
-  .mainview_right .mainview_right_unique {
-    font-size: 3.5rem;
-    padding: 10px 60px 5px 15px;
-    position: relative;
-    display: inline-block;
-    z-index: 1;
-    overflow: hidden;
-    background-color: rgba(22, 70, 3, 0.747);
-    clip-path: polygon(0 10%, 100% 0, 100% 88%, 0% 100%, 0% 70%); /* Wave-shaped background */
-  }
-  
-  .mainview_right p {
-    font-size: 4rem;
-    padding: 10px 20px;
-  }
-  
-  .mainview_icon img {
-    width: 100px;
-  }
-
-  
-
-
+}

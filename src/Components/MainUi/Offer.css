@@ -1,40 +1,111 @@
-
-.offers
-{
-    display: flex;
-    align-items: center;
-  justify-content: space-between;   
+.offers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #f9f9f9;
-    padding: 20px ;
-    margin-top: 80px;
+  padding: 20px;
+  margin-top: 80px;
 }
 
 
-.offer_left, .offer_right {
-    flex: 1;
-    text-align: center;
-  }
-.offer_right h1 
-{
-    font-size: 4rem;
-    font-weight:600 ;
-    font-family:  sans-serif;
+.offer_left,
+.offer_right {
+  flex: 1;
+  text-align: center;
+}
+
+.offer_right h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: sans-serif;
 }
 
 .offer_img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    animation: float 4s ease-in-out infinite;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
   }
 
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Extra Small Devices (Phones in Portrait Mode) */
+@media (max-width: 576px) {
+  .offers {
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 50px;
   }
 
-  
+  .offer_right h1 {
+    font-size: 2rem;
+  }
+
+  .offer_right p {
+    font-size: 1rem;
+  }
+
+  .offer_img {
+    margin-bottom: 20px;
+  }
+}
+
+/* Small Devices (Phones in Landscape Mode) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .offers {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .offer_right h1 {
+    font-size: 2.5rem;
+  }
+
+  .offer_right p {
+    font-size: 1.2rem;
+  }
+
+  .offer_img {
+    margin-bottom: 20px;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 769px) and (max-width: 991px) {
+  .offers {
+    padding: 20px;
+  }
+
+  .offer_right h1 {
+    font-size: 3rem;
+  }
+
+  .offer_right p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) {
+  .offers {
+    padding: 30px;
+  }
+
+  .offer_right h1 {
+    font-size: 4rem;
+  }
+
+  .offer_right p {
+    font-size: 1.75rem;
+  }
+}
