@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import { fetchApi } from '../Store/Slices/Products_Slice';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../Store/Slices/Cart_Slice';
-import '../App.css'; // Example of correct import statement
+import '../App.css'; 
 
 export const Product = () => {
   const dispatch = useDispatch();

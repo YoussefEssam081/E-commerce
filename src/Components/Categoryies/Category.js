@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchApi } from '../../Store/Slices/Products_Slice';
 import { Container, Row, Col, Image, Card, Button } from 'react-bootstrap';
-import { addToCart } from '../../Store/Slices/Cart_Slice';
+
 import { Link, useParams } from 'react-router-dom';
 import '../../App.css';
 
@@ -22,9 +22,6 @@ const Category = () => {
   const filteredProducts = products.filter(product => product.category === categoryName);
 
 
-  const handleAddToCart = (product) => {
-    dispatch(addToCart(product));
-  };
 
 
   if (status === 'loading') {
@@ -60,4 +57,3 @@ const Category = () => {
 };
 
 export default Category;
-//<Button variant="primary" onClick={() => handleAddToCart(product)}>Add to cart</Button>
